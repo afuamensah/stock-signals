@@ -1,0 +1,31 @@
+<div class="container">
+  <img src="https://i.ibb.co/HCVRtj0/image.png" width="80" height="auto">
+  <h1>Sign Up</h1>
+  <div class="card-body">
+      <form>
+          <div>
+              <label for="Name">Name</label>
+              <input type="text"/>
+          </div>
+          <div>
+              <label for="Email">Email</label>
+              <input type="text"  />
+          </div>
+          <div >
+            <label for="password">Password</label>
+            <input type="password"  />
+          </div>
+          <div >
+              <label for="password">Confirm Password</label>
+              <input type="password"  />
+          </div>
+          <div >
+              <button [disabled]="!allowSignUp">
+                  Sign Up
+              </button>
+              <br><br>
+              <a routerLink="/" class="link">Sign In</a>
+          </div>
+      </form>
+  </div>
+</div>

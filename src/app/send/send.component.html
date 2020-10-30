@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Send</button>
+    <button type="button" class="btn btn-outline-primary" ><a routerLink="/receive">Receive</a></button>
+  </div>
+  <h2 headerRed>EUR<br>1.17</h2>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="email" placeholder="Email address..." aria-label="Email" (input)="onSearchEmail($event)">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" [disabled]="!allowSend" (click)="onSend()">Send</button>
+    <br>
+    <br>
+    <p>{{signalEmail}}</p>
+    <p>{{sentMessage}}</p>
+  </form>
+  <br>
+  <a routerLink="/" class="link">Back to Login</a>
+</div>

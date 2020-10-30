@@ -1,0 +1,28 @@
+<div class="container">
+  <img src="https://i.ibb.co/HCVRtj0/image.png" width="80" height="auto">
+  <h1>Login</h1>
+  <div>
+      <form>
+          <div>
+              <label for="email">Email</label>
+              <input type="text"/>
+          </div>
+          <div>
+              <label for="password">Password</label>
+              <input type="password"/>
+          </div>
+          <div>
+            <br>
+              <button  [disabled]="!allowLogin">
+                  Sign In
+              </button>
+              <br><br>
+              <a class="link">Forgot Password?</a>
+              <br><br>
+              New User? <a routerLink="/register" class="link">Sign Up</a>
+              <br><br>
+              <a routerLink="/send" class="link">Send/Receive</a>
+          </div>
+      </form>
+  </div>
+</div>

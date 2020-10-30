@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+a { cursor: pointer; }
+
+.app-container {
+    min-height: 320px;
+    overflow: hidden;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+  .container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+  }
+
+h1 {
+  font-family: 'Asap', sans-serif;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+button {
+  font-weight: bold;
+  background-color: #25c1ff;
+  color: white;
+  padding: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid #25c1ff;
+  border-radius: 7px;
+  box-shadow: 0px 2px 8px #a1a1a1;
+}
+
+.link {
+  color: #25c1ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+label {
+  padding: 10px;
+  text-align: justify;
+
+}
