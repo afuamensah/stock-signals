@@ -1,0 +1,12 @@
+<div class="container">
+  <img src="https://i.ibb.co/HCVRtj0/image.png" width="80" height="auto">
+  <h1>Live Signals</h1>
+  <div *ngFor="let signal of signals" class="sign">
+    <p><a href="#">{{signal.sName}}  <span class="green"> {{signal.rate}}</span></a></p>
+    <p class="desc"><a href="#">{{signal.slName}}</a></p>
+    <h2><a href="#">{{signal.price}}</a></h2>
+    <button class="trade">
+      Trade
+  </button>
+  </div>
+</div>

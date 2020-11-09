@@ -1,0 +1,39 @@
+.sign {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 0.7px solid #5e5e5e;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+p {
+  font-size: 14px;
+}
+  p a {
+    color: #424242;
+    text-decoration: none;
+  }
+  .green {
+    color: #4fe94f;
+  }
+  .desc {
+    color: #868686;
+    margin-top: -15px;
+    margin-left: 5px;
+  }
+h2 a{
+  color: #000;
+  text-decoration: none;
+}
+.trade {
+  box-shadow: none;
+  color: #000;
+  font-weight: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 420px;
+  margin-top: -50px;
+}
+
