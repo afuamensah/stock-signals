@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Signal } from '../signals/signals';
+
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
+import { SignalService } from '../signals/signal.service';
 
 @Component({
   selector: 'app-send',
@@ -7,8 +13,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SendComponent implements OnInit {
 
+  @Input() signal: Signal;
+
   allowSend = false;
-  constructor() {
+  constructor(
+    private route: ActivatedRoute,
+    private signalService: SignalService,
+    private location: Location
+  ) {
     setTimeout(() => {this.allowSend = true;}, 2000);
   }
 
@@ -23,6 +35,13 @@ export class SendComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    this.getSignal();
+  }
+
+  getSignal(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.signalService.getSignal(id)
+      .subscribe(signal => this.signal = signal);
   }
 
 }

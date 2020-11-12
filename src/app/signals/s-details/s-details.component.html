@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngIf="signal">
+    <h2>{{signal.sName}}</h2><br>
+    <h1>{{signal.price}}</h1>
+  <div>
+  <button (click)="goBack()">go back</button>
+  <a routerLink="/send/{{signal.id}}">
+    <button>Send/Receive</button>
+  </a>
+</div>

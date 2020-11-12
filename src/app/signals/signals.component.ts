@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Signal } from './signals';
+import { SignalService } from './signal.service';
 
 @Component({
   selector: 'app-signals',
@@ -7,15 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignalsComponent implements OnInit {
 
-  signals = [
-    {sName: 'GBP/USD', rate: '(+0.02%)', slName:'British Pound/US Dollar', price: 1.2860},
-    {sName: 'EUR/USD', rate: '(+0.07%)', slName:'Euro/US Dollar', price: 1.17475},
-    {sName: 'AUD/USD', rate: '(+0.09%)', slName:'Australian Dollar/US Dollar', price: 0.71343}
-  ];
+  signals: Signal[];
 
-  constructor() { }
+  constructor(private signalService: SignalService) { }
 
   ngOnInit(): void {
+    this.getSignals();
+  }
+  getSignals(): void {
+    this.signalService.getSignals()
+        .subscribe(signals => this.signals = signals);
   }
 
 }
