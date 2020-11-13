@@ -14,6 +14,8 @@ import { NewsComponent } from './news/news.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { SDetailsComponent } from './signals/s-details/s-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     NewsComponent,
     ForgotComponent,
     SDetailsComponent,
-    NavbarComponent
+    NavbarComponent,
+    AlertsComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,7 @@
+.container {
+  width: 56%;
+}
+
 .sign {
   padding: 20px;
   padding-left: 30px;
@@ -36,12 +40,12 @@ h2 a{
   margin-left: 420px;
   margin-top: -50px;
 }
-
 .button {
   color: white;
   text-align: center;
   font-size: small;
   padding: 10px 15px;
+  margin-top: -60px;
   margin-left: 580px;
 }
 .topnav input[type=text] {
