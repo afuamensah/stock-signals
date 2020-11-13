@@ -1,0 +1,11 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <h1>Live News</h1>
+  <div *ngFor="let article of news" class="wrapper">
+    <h4><b>{{article.headline}}</b></h4>
+    <p>By {{article.author}}</p>
+    <img src="{{article.image}}" width="370" height="auto" target="_blank">
+    <br>
+    <a href="{{article.link}}">Read full article &gt;&gt;</a>
+  </div>
+</div>

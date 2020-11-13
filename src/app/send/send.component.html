@@ -1,18 +1,19 @@
 <div class="container">
+  <app-navbar></app-navbar>
   <h2>{{signal.sName}}<br>{{signal.price}}</h2>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="email" placeholder="Email address..." aria-label="Email" (input)="onSearchEmail($event)">
     <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" [disabled]="!allowSend" (click)="onSend()">Send</button>
-    <br>
-    <br>
-    <p>{{signalEmail}}</p>
-    <p>{{sentMessage}}</p>
+    <p class="message">{{signalEmail}}</p>
+    <p class="message2">{{sentMessage}}</p>
   </form>
   <hr>
   <form class="form-inline">
-    <input class="form-control mr-sm-2" type="text" placeholder="Enter link..." aria-label="Email">
-    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Receive</button>
+    <input class="form-control mr-sm-2" type="text" placeholder="Enter link..." aria-label="Email" (input)="onSearchLink($event)">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" [disabled]="!allowReceive" (click)="onReceive()">Receive</button>
+    <p class="message">{{signalLink}}</p>
+    <p class="message2">{{receiveMessage}}</p>
   </form>
   <br>
-  <a routerLink="/" class="link">Back to Login</a>
+  <a routerLink="/signals" class="link">Back to Signals</a>
 </div>

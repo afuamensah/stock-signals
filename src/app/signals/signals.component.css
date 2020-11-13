@@ -1,10 +1,15 @@
+.container {
+  text-align: center;
+}
+
 .sign {
   padding: 20px;
   padding-left: 30px;
   padding-right: 30px;
-  border: 0.7px solid #5e5e5e;
+  border: 0.9px solid#67cef4;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -23,7 +28,7 @@ p {
     margin-top: -15px;
     margin-left: 5px;
   }
-h2 a{
+a{
   color: #000;
   text-decoration: none;
 }
@@ -33,7 +38,7 @@ h2 a{
   font-weight: none;
   padding-left: 30px;
   padding-right: 30px;
-  margin-left: 420px;
+  margin-left: 320px;
   margin-top: -50px;
 }
 

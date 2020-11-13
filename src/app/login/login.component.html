@@ -13,15 +13,14 @@
           </div>
           <div>
             <br>
-              <button  [disabled]="!allowLogin">
-                  Sign In
-              </button>
+             <a routerLink="/signals">
+              <button>
+                Sign In
+              </button></a>
               <br><br>
-              <a class="link">Forgot Password?</a>
+              <a routerLink="/forgot" class="link">Forgot Password?</a>
               <br><br>
               New User? <a routerLink="/register" class="link">Sign Up</a>
-              <br><br>
-              <a routerLink="/send" class="link">Send/Receive</a>
           </div>
       </form>
   </div>

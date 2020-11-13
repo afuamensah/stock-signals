@@ -3,14 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { SendComponent } from './send/send.component';
-import { ReceiveComponent } from './receive/receive.component';
+import { SignalsComponent } from './signals/signals.component';
+import { NewsComponent } from './news/news.component';
+import { SDetailsComponent } from './signals/s-details/s-details.component';
+import { ForgotComponent } from './forgot/forgot.component';
 
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'send', component: SendComponent},
-  {path: 'receive', component: ReceiveComponent}
+  {path: 'send/:id', component: SendComponent},
+  {path: 'signals', component: SignalsComponent},
+  {path: 'detail/:id', component: SDetailsComponent},
+  {path: 'news', component: NewsComponent},
+  {path: 'forgot', component: ForgotComponent},
 ];
 
 @NgModule({
