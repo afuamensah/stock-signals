@@ -1,0 +1,17 @@
+<div class="container">
+  <img src="https://i.ibb.co/HCVRtj0/image.png" width="80" height="auto">
+  <h1>Rates & Charts</h1>
+  <button class="button"> Edit</button>
+  <p></p>
+  <div class="topnav">
+    <input type="text" placeholder="Search..">
+    &nbsp;
+  </div>
+  <div *ngFor="let signal of signals" class="sign">
+    <p><a href="#">{{signal.sName}}  <span class="green"> {{signal.rate}}</span></a></p>
+    <p class="desc"><a href="#">{{signal.slName}}</a></p>
+    <h2><a href="#">{{signal.price}}</a></h2>
+    <hr>
+    <img [src] ="signal.img" style="width: 620px;height: 400px;">
+  </div>
+</div>
