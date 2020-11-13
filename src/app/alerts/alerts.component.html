@@ -1,0 +1,15 @@
+<div class="container">
+  <img src="https://i.ibb.co/HCVRtj0/image.png" width="80" height="auto">
+  <h1>Alerts</h1>
+  <img src="https://img.icons8.com/color/48/000000/1-circle-c--v1.png" style="float: right;" width="35" height="35"/>
+
+  <div *ngFor="let signal of signals" class="sign">
+    <p style="color: #2196F3;"><b>{{signal.newSignal}}</b></p>
+    <p>Pair: <b>{{signal.pair}}</b><span style="float:right;">Action: <b>{{signal.action}}</b></span></p>
+    <p class="desc">Signal Hit Take Profit<span style="float:right;">Entry Price: <b>{{signal.price}}</b></span></p>
+    <p class="desc" style="float:right;">SL: <b>{{signal.SL}} </b></p>
+    &nbsp;
+    <p style="float:right; color: black; margin-right: -68px; margin-top: 7px;">TP: <b>{{signal.TP}}</b></p>
+    <p style="margin-bottom: -10px;">Closes: 11/13/2020 12:09 AM</p>
+  </div>
+</div>
