@@ -4,4 +4,7 @@ export interface Signal {
   rate: string;
   slName: string;
   price: number;
+  open: number;
+  high: number;
+  low: number;
 }

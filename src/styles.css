@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-a { cursor: pointer; }
+a { cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
 
 .app-container {
     min-height: 320px;
@@ -13,7 +19,7 @@ a { cursor: pointer; }
 
   .container {
     margin: auto;
-    width: 50%;
+    width: 40%;
     padding: 10px;
     text-align: center;
   }

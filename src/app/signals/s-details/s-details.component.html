@@ -1,10 +1,18 @@
 <div class="container">
+  <app-navbar></app-navbar>
   <div *ngIf="signal">
-    <h2>{{signal.sName}}</h2><br>
-    <h1>{{signal.price}}</h1>
+    <h2><b>{{signal.sName}}</b></h2>
+    <p class="desc">{{signal.slName}}</p>
+    <hr>
+    <p><b>{{signal.price}}</b> <span class="rate">{{signal.rate}}</span></p>
+    <hr>
+    <p><span class="cat">Open:</span>{{signal.open}}</p>
+    <p><span class="cat">High:</span>{{signal.high}}</p>
+    <p><span class="cat">Low:</span>{{signal.low}}</p>
   <div>
-  <button (click)="goBack()">go back</button>
   <a routerLink="/send/{{signal.id}}">
     <button>Send/Receive</button>
   </a>
+  <br><br>
+  <a routerLink="/signals" class="link">Back to Signals</a>
 </div>
