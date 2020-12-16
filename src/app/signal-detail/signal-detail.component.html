@@ -1,0 +1,9 @@
+<div class="container">
+  <img src="https://i.ibb.co/HCVRtj0/image.png" width="80" height="auto">
+    <p><a [routerLink]="['/signals', signal.id]">{{signal.sName}}  <span class="green"> {{signal.rate}}</span></a></p>
+    <p class="desc"><a [routerLink]="['/signals', signal.id]">{{signal.slName}}</a></p>
+    <h2><a [routerLink]="['/signals', signal.id]">{{signal.price}}</a></h2>
+    <button class="trade">
+      Send/Receive
+  </button>
+</div>

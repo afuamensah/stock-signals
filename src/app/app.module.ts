@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,7 @@ import { SDetailsComponent } from './signals/s-details/s-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { ChartsComponent } from './charts/charts.component';
+import { AddSignalsComponent } from './signals/add-signals/add-signals.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,14 @@ import { ChartsComponent } from './charts/charts.component';
     SDetailsComponent,
     NavbarComponent,
     AlertsComponent,
-    ChartsComponent
+    ChartsComponent,
+    AddSignalsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

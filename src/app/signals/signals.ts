@@ -7,4 +7,5 @@ export interface Signal {
   open: number;
   high: number;
   low: number;
+  show: boolean;
 }

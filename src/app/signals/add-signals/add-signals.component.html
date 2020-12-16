@@ -2,16 +2,14 @@
   <app-navbar></app-navbar>
   <h1>Live Signals</h1>
   <div *ngFor="let signal of signals">
-    <div class="sign" *ngIf="signal.show == true">
-      <a routerLink="/detail/{{signal.id}}">
+    <div class="sign" *ngIf="signal.show == false">
       <p>{{signal.sName}}  <span class="green"> {{signal.rate}}</span></p>
       <p class="desc">{{signal.slName}}</p>
       <h2>{{signal.price}}</h2>
-      <button class="trade">
-        Trade
+      <button class="trade"(click)= "onAdd(signal.id)">
+        Add
       </button>
-      </a>
     </div>
   </div>
-  <a routerLink="/add-signals" class="link">Add Signals</a>
+  <a routerLink="/signals" class="link">Back to Signals</a>
 </div>

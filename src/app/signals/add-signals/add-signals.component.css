@@ -1,0 +1,43 @@
+.container {
+  text-align: center;
+}
+
+.sign {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 0.9px solid#67cef4;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+p {
+  font-size: 14px;
+}
+  p a {
+    color: #424242;
+    text-decoration: none;
+  }
+  .green {
+    color: #4fe94f;
+  }
+  .desc {
+    color: #868686;
+    margin-top: -15px;
+    margin-left: 5px;
+  }
+a{
+  color: #000;
+  text-decoration: none;
+}
+.trade {
+  box-shadow: none;
+  color: #000;
+  font-weight: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 320px;
+  margin-top: -50px;
+}

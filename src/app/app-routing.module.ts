@@ -9,6 +9,7 @@ import { SDetailsComponent } from './signals/s-details/s-details.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { ChartsComponent } from './charts/charts.component';
+import { AddSignalsComponent } from './signals/add-signals/add-signals.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'forgot', component: ForgotComponent},
   {path: 'charts', component: ChartsComponent},
   {path: 'alerts', component: AlertsComponent},
+  {path: 'add-signals', component: AddSignalsComponent}
 ];
 
 @NgModule({

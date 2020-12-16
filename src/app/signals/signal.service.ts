@@ -16,5 +16,10 @@ export class SignalService {
     return of(SIGNALS.find(signal => signal.id === id));
   }
 
+  onAdd(id: number): void {
+    var addition = SIGNALS.find(signal => signal.id === id);
+    addition.show = true;
+  }
+
   constructor() { }
 }
