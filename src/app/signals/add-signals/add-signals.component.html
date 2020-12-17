@@ -1,8 +1,9 @@
 <div class="container">
   <app-navbar></app-navbar>
-  <h1>Live Signals</h1>
+  <h1>Add Live Signals</h1>
   <div *ngFor="let signal of signals">
     <div class="sign" *ngIf="signal.show == false">
+      <img [src]="signal.flagImage">
       <p>{{signal.sName}}  <span class="green"> {{signal.rate}}</span></p>
       <p class="desc">{{signal.slName}}</p>
       <h2>{{signal.price}}</h2>
