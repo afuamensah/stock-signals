@@ -4,6 +4,7 @@
   <div *ngFor="let signal of signals">
     <div class="sign" *ngIf="signal.show == true">
       <a routerLink="/detail/{{signal.id}}">
+        <img [src]="signal.flagImage">
       <p>{{signal.sName}}  <span class="green"> {{signal.rate}}</span></p>
       <p class="desc">{{signal.slName}}</p>
       <h2>{{signal.price}}</h2>
