@@ -8,6 +8,7 @@
     &nbsp;
   </div>
   <div *ngFor="let signal of signals" class="sign">
+    <img [src]="signal.flagImage">
     <p><a href="#">{{signal.sName}}  <span class="green"> {{signal.rate}}</span></a></p>
     <p class="desc"><a href="#">{{signal.slName}}</a></p>
     <h2><a href="#">{{signal.price}}</a></h2>
