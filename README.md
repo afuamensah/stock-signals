@@ -4,6 +4,8 @@ This was a project that me and a partner worked on throughout the semester. It i
 
 Final Grade: **A**
 
+<hr>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server
