@@ -1,4 +1,8 @@
-# SsLogin
+# Stock Signals
+
+This was a project that me and a partner worked on throughout the semester. It is a stock signals app where users can add, buy, sell, receive, and trade signals. The user can also view the signal's rates and charts and signal related news.
+
+Final Grade: **A**
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
